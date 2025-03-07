@@ -12,11 +12,14 @@
         "sources": "https://github.com/FabricMC/fabric-example-mod"
     },
     "license": "${license}",
-    "icon": "${mod_id}.png",
+    "icon": "icon.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.example.examplemod.ExampleMod"
+            "net.hyper_pigeon.map_shot.MapShotFabric"
+        ],
+        "client": [
+            "net.hyper_pigeon.map_shot.MapShotFabricClient"
         ]
     },
     "mixins": [
@@ -30,7 +33,6 @@
         "java": ">=${java_version}"
     },
     "suggests": {
-        "another-mod": "*"
     }
 }
   
