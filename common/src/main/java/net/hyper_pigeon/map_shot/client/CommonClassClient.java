@@ -8,8 +8,4 @@ public class CommonClassClient {
 
     public static final KeyMapping OPEN_MAP_SCREENSHOT_SCREEN_KEY_MAPPING = new KeyMapping("key.map_shot.open_map_screenshot_screen", GLFW.GLFW_KEY_F12, CATEGORY);
 
-    public static boolean hasKeyDown(KeyMapping keyMapping) {
-        if (keyMapping.isUnbound()) return false;
-        return keyMapping.isDown();
-    }
 }
