@@ -1,8 +1,7 @@
 package net.hyper_pigeon.map_shot.mixin;
 
-import com.mojang.blaze3d.platform.NativeImage;
 import net.hyper_pigeon.map_shot.client.CommonClassClient;
-import net.hyper_pigeon.map_shot.client.render.MapShotScreen;
+import net.hyper_pigeon.map_shot.client.render.screen.MapShotScreen;
 import net.minecraft.client.KeyboardHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.component.DataComponents;
@@ -28,11 +27,21 @@ public class KeyboardHandlerMixin {
     @Inject(method="keyPress", at = @At("TAIL"), cancellable = true)
     public void openMapShotScreen(long windowPointer, int key, int scanCode, int action, int modifiers, CallbackInfo ci){
         if(CommonClassClient.OPEN_MAP_SCREENSHOT_SCREEN_KEY_MAPPING.matches(key,scanCode) && minecraft.player.getMainHandItem().is(Items.FILLED_MAP)) {
-            ItemStack mapStack = minecraft.player.getMainHandItem();
-            MapItemSavedData mapItemSavedData = MapItem.getSavedData(mapStack, minecraft.level);
-            MapId mapId = mapStack.get(DataComponents.MAP_ID);
-            minecraft.setScreen(new MapShotScreen(mapId,mapItemSavedData));
-            ci.cancel();
+            ItemStack mapStack = null;
+            if(minecraft.player.getMainHandItem().is(Items.FILLED_MAP)){
+                mapStack = minecraft.player.getMainHandItem();
+            }
+            else if(minecraft.player.getOffhandItem().is(Items.FILLED_MAP)){
+                mapStack = minecraft.player.getOffhandItem();
+            }
+
+            if(mapStack != null) {
+                MapItemSavedData mapItemSavedData = MapItem.getSavedData(mapStack, minecraft.level);
+                MapId mapId = mapStack.get(DataComponents.MAP_ID);
+                minecraft.setScreen(new MapShotScreen(mapId,mapItemSavedData));
+                ci.cancel();
+            }
+
         }
     }
 }
