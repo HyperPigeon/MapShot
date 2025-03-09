@@ -2,7 +2,6 @@ package net.hyper_pigeon.map_shot.client.render.screen;
 
 import com.mojang.blaze3d.pipeline.RenderTarget;
 import com.mojang.blaze3d.pipeline.TextureTarget;
-import com.mojang.blaze3d.platform.GlStateManager;
 import com.mojang.blaze3d.platform.NativeImage;
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.logging.LogUtils;
@@ -11,8 +10,6 @@ import net.hyper_pigeon.map_shot.client.render.CustomMapRenderer;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.client.GameNarrator;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.Screenshot;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
@@ -21,7 +18,6 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.saveddata.maps.MapId;
 import net.minecraft.world.level.saveddata.maps.MapItemSavedData;
 import org.jetbrains.annotations.Nullable;
-import org.lwjgl.opengl.GL11;
 import org.slf4j.Logger;
 
 import java.io.File;
