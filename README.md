@@ -12,4 +12,10 @@ Press **Save map as screenshot** to create the screenshot.
 
 ![2025-03-11_19 36 46](https://github.com/user-attachments/assets/5f8414b9-d41a-4b77-be83-10ce6dbff58f)
 
+<br>
+<center><i>Check out Kinetic Hosting for hassle-free, budget-friendly Minecraft servers!</i></center>
+<br>
+
+[![Kinetic Hosting Affliate Link for Cyborg Pigeon](https://i.imgur.com/OVfuXg1.png)](https://client.kinetichosting.net/aff.php?aff=587)
+
 
