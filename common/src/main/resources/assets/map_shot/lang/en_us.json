@@ -1,6 +1,6 @@
 {
   "gui.map_shot.normal_screenshot": "Normal Screenshot",
-  "gui.map_shot.map_screenshot": "Take Map Screenshot",
+  "gui.map_shot.map_screenshot": "Save map as screenshot",
   "gui.map_shot.decrease_scale": "-",
   "gui.map_shot.increase_scale": "+",
   "gui.map_shot.scale": "Scale: %d",
