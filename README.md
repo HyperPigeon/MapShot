@@ -15,7 +15,7 @@ Press **Save map as screenshot** to create the screenshot.
 <br>
 <center><i>Check out Kinetic Hosting for hassle-free, budget-friendly Minecraft servers!</i></center>
 <br>
-
+<br>
 [![Kinetic Hosting Affliate Link for Cyborg Pigeon](https://i.imgur.com/OVfuXg1.png)](https://client.kinetichosting.net/aff.php?aff=587)
 
 
