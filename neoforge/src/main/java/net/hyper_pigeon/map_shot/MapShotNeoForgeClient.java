@@ -10,7 +10,7 @@ import net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent;
 public class MapShotNeoForgeClient {
 
     @SubscribeEvent
-    public void registerBindings(RegisterKeyMappingsEvent event) {
+    public static void registerBindings(RegisterKeyMappingsEvent event) {
         event.register(CommonClassClient.OPEN_MAP_SCREENSHOT_SCREEN_KEY_MAPPING);
     }
 }
