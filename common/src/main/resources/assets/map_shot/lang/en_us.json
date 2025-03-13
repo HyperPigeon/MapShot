@@ -1,4 +1,5 @@
 {
+  "modmenu.descriptionTranslation.map_shot": "A mod that allows players to take better screenshots of in-game maps.",
   "gui.map_shot.normal_screenshot": "Normal Screenshot",
   "gui.map_shot.map_screenshot": "Save map as screenshot",
   "gui.map_shot.decrease_scale": "-",

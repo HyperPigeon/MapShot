@@ -1,0 +1,10 @@
+{
+  "modmenu.descriptionTranslation.map_shot": "Eine Mod, die es Spielern ermöglicht, bessere Screenshots von Ingame-Karten zu machen.",
+  "gui.map_shot.normal_screenshot": "Normaler Screenshot",
+  "gui.map_shot.map_screenshot": "Karte als Screenshot speichern",
+  "gui.map_shot.decrease_scale": "-",
+  "gui.map_shot.increase_scale": "+",
+  "gui.map_shot.scale": "Skalierung: %d",
+  "key.map_shot.open_map_screenshot_screen": "Karten-Screenshot-Bildschirm öffnen",
+  "category.map_shot.controls": "Map Shot"
+}
