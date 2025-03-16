@@ -26,7 +26,7 @@ public class KeyboardHandlerMixin {
 
     @Inject(method="keyPress", at = @At("TAIL"), cancellable = true)
     public void openMapShotScreen(long windowPointer, int key, int scanCode, int action, int modifiers, CallbackInfo ci){
-        if(CommonClassClient.OPEN_MAP_SCREENSHOT_SCREEN_KEY_MAPPING.matches(key,scanCode) && minecraft.player.getMainHandItem().is(Items.FILLED_MAP)) {
+        if(CommonClassClient.OPEN_MAP_SCREENSHOT_SCREEN_KEY_MAPPING.matches(key,scanCode) && this.minecraft.player != null) {
             ItemStack mapStack = null;
             if(minecraft.player.getMainHandItem().is(Items.FILLED_MAP)){
                 mapStack = minecraft.player.getMainHandItem();
